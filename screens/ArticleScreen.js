@@ -26,19 +26,7 @@ export default ArticleScreen = ({route}) => {
   };
   return (
     <SafeAreaView style={styles.container}>
-      {/* <ClipButton onPress={toggleClip} enabled={isClipped()} /> */}
-      <TouchableOpacity
-        onPress={() => {
-          dispatch(addClip({clip: article}));
-        }}>
-        <Text style={{margin: 10, fontSize: 30}}>ADD_CLIP</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={() => {
-          dispatch(deleteClip({clip: article}));
-        }}>
-        <Text style={{margin: 10, fontSize: 30}}>DELETE_CLIP</Text>
-      </TouchableOpacity>
+      <ClipButton onPress={toggleClip} enabled={isClipped()} />
       <WebView source={{uri: article.url}} />
     </SafeAreaView>
   );

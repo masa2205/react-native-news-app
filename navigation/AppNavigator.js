@@ -6,7 +6,7 @@ import HomeScreen from '../screens/HomeScreen';
 import ArticleScreen from '../screens/ArticleScreen';
 import ClipScreen from '../screens/ClipScreen';
 import 'react-native-gesture-handler';
-// import {FontAwesome} from 'react-native-vector-icons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -37,25 +37,22 @@ const ClipStack = () => {
   );
 };
 
-// const screenOption = ({route}) => ({
-//   tabBarIcon: ({color, size}) => {
-//     let iconName;
-
-//     if (route.name === 'Home') {
-//       iconName = 'home';
-//     } else if (route.name === 'Clip') {
-//       iconName = 'bookmark';
-//     }
-
-//     // You can return any component that you like here!
-//     return <FontAwesome name={iconName} size={size} color={color} />;
-//   },
-// });
+const screenOption = ({route}) => ({
+  tabBarIcon: ({color, size}) => {
+    let iconName;
+    if (route.name === 'Home') {
+      iconName = 'home';
+    } else if (route.name === 'Clip') {
+      iconName = 'bookmark';
+    }
+    return <Icon name={iconName} size={size} color={color} />;
+  },
+});
 
 export default AppNavigator = () => {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator screenOptions={screenOption}>
         <Tab.Screen
           name="Home"
           component={HomeStack}

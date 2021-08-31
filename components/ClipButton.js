@@ -1,12 +1,12 @@
 import React from 'react';
 import {StyleSheet, TouchableOpacity} from 'react-native';
-import {FontAwesome} from 'react-native-vector-icons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const ClipButton = ({onPress, enabled}) => {
   const name = enabled ? 'bookmark' : 'bookmark-o';
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
-      <FontAwesome name={name} size={40} color="gray" />
+      <Icon name={name} size={40} color="gray" />
     </TouchableOpacity>
   );
 };
