@@ -14,6 +14,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		4CC59AA3E1F8DBDA51863F41 /* libPods-react_native_news_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CDEEC599FE499189579085 /* libPods-react_native_news_app.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D4A9A2A426DE25EC00E5B7EC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A9A2A326DE25EC00E5B7EC /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = react_native_news_app/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8546267EF3F829EE8DF3DE87 /* Pods-react_native_news_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_news_app.release.xcconfig"; path = "Target Support Files/Pods-react_native_news_app/Pods-react_native_news_app.release.xcconfig"; sourceTree = "<group>"; };
 		8D4613B03EEEBB1B1C17C806 /* Pods-react_native_news_app-react_native_news_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_news_app-react_native_news_appTests.release.xcconfig"; path = "Target Support Files/Pods-react_native_news_app-react_native_news_appTests/Pods-react_native_news_app-react_native_news_appTests.release.xcconfig"; sourceTree = "<group>"; };
+		D4A9A2A326DE25EC00E5B7EC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../../Downloads/icon.png; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 		13B07FAE1A68108700A75B9A /* react_native_news_app */ = {
 			isa = PBXGroup;
 			children = (
+				D4A9A2A226DE25A600E5B7EC /* Images.xcassets */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -114,7 +117,6 @@
 				4460C82C88C0DCAF3976A724 /* Pods-react_native_news_app-react_native_news_appTests.debug.xcconfig */,
 				8D4613B03EEEBB1B1C17C806 /* Pods-react_native_news_app-react_native_news_appTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -147,6 +149,14 @@
 				00E356EE1AD99517003FC87E /* react_native_news_appTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D4A9A2A226DE25A600E5B7EC /* Images.xcassets */ = {
+			isa = PBXGroup;
+			children = (
+				D4A9A2A326DE25EC00E5B7EC /* icon.png */,
+			);
+			name = Images.xcassets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +255,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				D4A9A2A426DE25EC00E5B7EC /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
